@@ -1,0 +1,696 @@
+* {
+    box-sizing: border-box;
+    border: 0;
+    margin: 0%;
+}
+
+body {
+    font-family: 'Roboro', sans-serif;
+}
+
+main {
+    border-top: 2px solid black;
+}
+
+@media screen and (min-width: 300px) and (max-width: 600px) {
+
+    #mSvg {
+        display: none;
+    }
+
+    header {
+        background-color: #FAC017;
+    }
+
+    .header-box {
+        padding: 25px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header-logo {
+        width: 40%;
+    }
+
+    .header-logo img {
+        width: 100%;
+    }
+
+    .navbar-box ul {
+        display: flex;
+        justify-content: space-around;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .navbar-box ul li {
+        list-style-type: none;
+        font-size: 14px;
+    }
+
+    .navbar-box ul li:nth-child(1) {
+        display: none;
+    }
+
+    .navbar-box ul li:nth-child(2) {
+        display: none;
+    }
+
+    .navbar-box ul li:nth-child(3) {
+        display: none;
+    }
+
+    .navbar-box li:last-child {
+        background-color: #181918;
+        color: white;
+        padding-left: 14px;
+        padding-right: 14px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 20px;
+    }
+
+    .jumbo {
+        height: 55vh;
+        background-color: #FAC017;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+
+    .jumbo h1 {
+        font-family: 'Spectral', Arial, Helvetica, sans-serif;
+        font-size: 5rem;
+        font-weight: 600;
+    }
+
+    .jumbo-element {
+        width: 92%;
+    }
+
+    .jumbo-sub-title {
+        font-size: 1em;
+        margin-bottom: 30px;
+    }
+
+    .jumbo-button button {
+        background-color: black;
+        color: white;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 18px;
+        border-radius: 20px;
+    }
+
+    .trending-box {
+        display: flex;
+        justify-content: center;
+        border-bottom: 1px solid gray;
+        padding-bottom: 40px;
+    }
+
+    .box-content {
+        width: 90%;
+    }
+
+    .trending-title {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .trending-title p {
+        font-size: 12px;
+        font-weight: 500;
+        color: gray;
+    }
+
+    .card-list {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .card {
+        display: flex;
+        justify-content: start;
+        flex-wrap: nowrap;
+        width: 100%;
+        gap: 30px;
+    }
+
+    .card-body {
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        gap: 8px;
+        padding-top: 5px;
+
+    }
+
+    .card-number {
+        font-size: 1.8em;
+        color: #E6E7E7;
+        font-weight: 600;
+        height: 100%;
+    }
+
+    .card-user {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        width: 100%;
+    }
+
+    .user-name {
+        font-size: 12px;
+        font-weight: 600;
+        width: 100%;
+    }
+
+    .user-img img {
+        width: 100%;
+        border-radius: 50px;
+    }
+
+    .card-text {
+        font-weight: bold;
+    }
+
+    .user-img {
+        width: 27px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .card-timing {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        font-size: 13px;
+        color: gray;
+    }
+
+    .interest-section {
+        display: flex;
+        justify-content: center;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .interest-title {
+        font-weight: bold;
+    }
+
+    .interest-list {
+        display: flex;
+        gap: 8px 15px;
+        width: 100%;
+        flex-wrap: wrap;
+        padding-top: 20px;
+        padding-bottom: 40px;
+        border-bottom: 1px solid gray;
+    }
+
+    .interest {
+        padding: 8px;
+        border: 1px solid rgb(180, 178, 178);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        color: rgb(152, 152, 152);
+    }
+
+    .article-box {
+        display: flex;
+        justify-content: center;
+    }
+
+    .secondary-nav {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .secondary-nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 10px 18px;
+        padding-inline-start: 0px;
+        font-size: 14px;
+        margin-bottom: 25px;
+    }
+
+    .secondary-nav ul li {
+        list-style-type: none;
+        cursor: pointer;
+    }
+
+    .post {
+        display: flex;
+        margin-bottom: 30px;
+        gap: 4px;
+    }
+
+    .post-content {
+        width: 60%;
+    }
+
+    .post-body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .img-post img {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .img-post {
+        width: 40%;
+        height: 100%;
+    }
+
+    .post-preview {
+        margin-top: 4px;
+        color: gray;
+    }
+
+
+    .post-description {
+        font-size: 12px;
+        display: flex;   
+        align-items: center; 
+        margin-top: 10px;    
+    }
+
+    .post-date {
+        display: flex;
+        align-items: center;
+        width: 44%;
+        gap: 6px;
+    }
+
+    .topic {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 11px;
+    }
+
+    .post-title h3 {
+        font-weight: bold;
+        font-size: 1.2rem;
+        padding-top: 13px;
+        padding-bottom: 4px;
+    }
+
+
+    .topic p {
+        background-color: rgb(209, 209, 209);
+        border-radius: 20px;
+        padding: 2px 5px 2px 5px;
+    }
+
+    .post-date p:nth-child(2) {
+        padding-bottom: 6px;
+    }
+
+    .post-date p:nth-child(4) {
+        padding-bottom: 6px;
+    }
+
+    .icons {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-left: 10px;
+    }
+
+    .icons img:nth-child(2) {
+        margin-left: 55px;
+    }
+
+}
+
+
+@media screen and (min-width: 1200px) {
+
+    header {
+        background-color: #FAC017;
+    }
+
+
+    .center-box {
+        display: flex;
+        justify-content: center;
+    }
+
+    .header-box {
+        width: 80%;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header-logo {
+        width: 20%;
+    }
+
+    .header-logo img {
+        width: 100%;
+    }
+
+    .navbar-box ul {
+        display: flex;
+        justify-content: space-around;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .navbar-box ul li {
+        list-style-type: none;
+        font-size: 14px;
+    }
+
+    .navbar-box li:last-child {
+        background-color: #181918;
+        color: white;
+        padding-left: 14px;
+        padding-right: 14px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 20px;
+    }
+
+    #jumbo-article {
+        background-color: #FAC017;
+        display: flex;
+        justify-content: center;
+    }
+
+    .box-m {
+        position: absolute;
+        top: 67px;
+        right: 0px;
+    }
+
+    .jumbo {
+        width: 80%;
+        height: 55vh;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        margin-bottom: 40px;
+        position: relative;
+    }
+
+    .jumbo h1 {
+        font-family: 'Spectral', Arial, Helvetica, sans-serif;
+        font-size: 5rem;
+        font-weight: 600;
+    }
+
+    .jumbo-element {
+        width: 92%;
+    }
+
+    .jumbo-sub-title {
+        font-size: 1em;
+        margin-bottom: 30px;
+    }
+
+    .jumbo-button button {
+        background-color: black;
+        color: white;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 18px;
+        border-radius: 20px;
+    }
+
+    .trending-box {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 40px;
+        padding-top: 40px;
+    }
+
+    .box-content {
+        width: 80%;
+    }
+
+    .trending-title {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .trending-title p {
+        font-size: 12px;
+        font-weight: 500;
+        color: gray;
+    }
+
+    .card-list {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .card {
+        display: flex;
+        width: 32.5%;
+    }
+
+    .card-body {
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        gap: 8px;
+        padding-top: 2px;
+        padding-left: 4px;
+
+    }
+
+    .card-number {
+        font-size: 1.8em;
+        color: #E6E7E7;
+        font-weight: 600;
+        height: 100%;
+    }
+
+    .card-user {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        width: 100%;
+    }
+
+    .user-name {
+        font-size: 12px;
+        font-weight: 600;
+        width: 100%;
+    }
+
+    .user-img img {
+        width: 100%;
+        border-radius: 50px;
+    }
+
+    .card-text {
+        font-weight: bold;
+    }
+
+    .user-img {
+        width: 27px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .card-timing {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        font-size: 13px;
+        color: gray;
+    }
+
+    .interest-section {
+        display: flex;
+        justify-content: right;
+        padding-bottom: 40px;
+    }
+
+    .interest-title {
+        font-weight: bold;
+    }
+
+    .interest-list {
+        display: flex;
+        gap: 8px 15px;
+        width: 100%;
+        flex-wrap: wrap;
+        padding-top: 20px;
+        padding-bottom: 40px;
+        border-bottom: 1px solid gray;
+    }
+
+    .interest {
+        padding: 8px;
+        border: 1px solid rgb(180, 178, 178);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        color: rgb(152, 152, 152);
+    }
+
+    .article-box {
+        display: flex;
+        justify-content: left;
+    }
+
+    .secondary-nav {
+        width: 100%;
+    }
+
+    .secondary-nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 10px 18px;
+        padding-inline-start: 0px;
+        font-size: 14px;
+        margin-bottom: 25px;
+    }
+
+    .secondary-nav ul li {
+        list-style-type: none;
+        cursor: pointer;
+    }
+
+    .post {
+        display: flex;
+        margin-bottom: 30px;
+        gap: 4px;
+    }
+
+    .post-content {
+        width: 60%;
+    }
+
+    .post-body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .img-post img {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .img-post {
+        width: 40%;
+        height: 100%;
+    }
+
+    .post-preview {
+        margin-top: 4px;
+        color: gray;
+    }
+
+
+    .post-description {
+        font-size: 12px;
+        display: flex;   
+        align-items: center; 
+        margin-top: 10px;    
+    }
+
+    .post-date {
+        display: flex;
+        align-items: center;
+        width: 44%;
+        gap: 6px;
+    }
+
+    .topic {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 11px;
+    }
+
+    .post-title h3 {
+        font-weight: bold;
+        font-size: 1.2rem;
+        padding-top: 13px;
+        padding-bottom: 4px;
+    }
+
+
+    .topic p {
+        background-color: rgb(209, 209, 209);
+        border-radius: 20px;
+        padding: 2px 5px 2px 5px;
+    }
+
+    .post-date p:nth-child(2) {
+        padding-bottom: 6px;
+    }
+
+    .post-date p:nth-child(4) {
+        padding-bottom: 6px;
+    }
+
+    .icons {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-left: 10px;
+    }
+
+    .icons img:nth-child(2) {
+        margin-left: 55px;
+    }
+
+    .box-article {
+        margin-top: 30px;
+        display: flex;
+        width: 80%;
+    }
+
+    #flex {
+        display: flex;
+        justify-content: center;
+    }
+
+    #postBox {
+        order: -1;
+    }
+
+
+
+
+
+
+
+
+}
